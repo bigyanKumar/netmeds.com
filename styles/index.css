@@ -1,0 +1,63 @@
+#header{
+    width: 100%;
+    height: 170px;
+    background-color: #32aeb1;
+    position: relative;
+}
+#first-nav{
+    display: flex;
+    padding: 10px;
+    font-size: 20px;
+    color: white;
+}
+#first-nav>div:nth-child(1){
+    width: 300px;
+    margin-left: 50px;
+}
+#first-nav>div:nth-child(2){
+    width: 700px;
+    height: 50px;
+    display: flex;
+    background-color: white;
+    border-radius: 5px;
+    color:gray
+}
+#first-nav>div:nth-child(3){
+    width: 150px;
+   padding-top: 10px;
+   margin-left: 20px;
+}
+#first-nav>div:nth-child(3){
+    width: 200px;
+    padding: 10px;
+}
+#first-nav>div:nth-child(4){
+    width: 150px;
+    padding: 10px;
+}
+#first-nav>div:nth-child(5){
+    width: 400px;
+    padding: 10px;
+}
+#first-nav>div:nth-child(2)>div>input{
+    width: 305px;
+    height: 88%;
+    border: none;
+}
+#first-nav>div:nth-child(2)>div:first-child{
+    border-radius: 5px;
+    width: 200px;
+    height: 100%;
+    padding: 15px;
+    font-size: 15px;
+}
+#first-nav>div:nth-child(2)>div:last-child{
+    border-radius: 5px;
+    width: 313.5px;
+    height: 100%;
+    border:none;
+}
+.fa-upload{
+    color: black;
+    padding: 7px;
+}
