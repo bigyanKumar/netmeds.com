@@ -40,24 +40,138 @@
     padding: 10px;
 }
 #first-nav>div:nth-child(2)>div>input{
-    width: 305px;
+    width: 355px;
     height: 88%;
     border: none;
 }
-#first-nav>div:nth-child(2)>div:first-child{
+#first-nav>div:nth-child(2)>div:nth-child(1){
     border-radius: 5px;
-    width: 200px;
+    width: 150px;
     height: 100%;
-    padding: 15px;
     font-size: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
-#first-nav>div:nth-child(2)>div:last-child{
+#first-nav>div:nth-child(2)>div:nth-child(3){
     border-radius: 5px;
-    width: 313.5px;
+    width: 363.5px;
     height: 100%;
     border:none;
 }
 .fa-upload{
-    color: black;
-    padding: 7px;
+    color: white;
+    padding: 5px;
 }
+.fa-cart-arrow-down{
+    color: white;
+    padding: 5px;
+}
+.fa-address-card{
+    color: white;
+    padding: 5px; 
+}
+.fa-angle-down{
+    color: black;
+    padding-left: 8px;
+}
+#first-nav>div:nth-child(2)>div:nth-child(1) p{
+   border-right: 1px solid black;
+}
+#first-nav>div:nth-child(2)>div:nth-child(2){
+    width: 360px;
+    top: 52px;
+    position: absolute;
+    z-index: 52px;
+    left: 0;
+    background-color: red;
+ }
+ #second-nav{
+     display: flex;
+     width: 1000px;
+     height: 50px;
+     margin: auto;
+     justify-content: space-around;
+ }
+ #second-nav > div{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     color: white;
+     padding: 40px;
+ }
+ #second-nav > div >div:first-child{
+    width: 50px;
+    border-radius: 25px;
+ }
+ #second-nav > div >div:first-child > i{
+    font-size: 40px;
+    border-radius: 30px;
+    color: white;
+    background-color: #32aeb1;
+ }
+ #third-nav{
+     display: flex;
+     width: 100%;
+     height: 40px;
+     justify-content: center;
+ }
+ #third-nav>p{
+     width: 120px;
+     height: auto;
+     font-weight: bold;
+     font-size: 15px;
+     text-align: left;
+ }
+ #main-slide{
+    width: 100%;
+    position: relative;
+    margin: auto;
+    padding-top: 20px;
+}
+.slide{
+     -webkit-animation-name:fade;
+     -webkit-animation-duration: 13.0s;
+     animation-name: fade;
+     animation-duration: 13.0s;
+}
+#main-slide>div>img{
+    width: 100%;
+    height: 350px;
+}
+#bullet-slide{
+    width: 100px;
+    height: 20px;
+    margin:auto;
+    display: flex;
+    justify-content: space-evenly;
+}
+#bullet-slide>div{
+    width: 10px;
+    height: 10px;
+    border:1px solid green;
+    border-radius: 5px;
+    background-color: green;
+}
+@-webkit-keyframes fade {
+ from {opacity: .9} 
+ to {opacity: 1}
+ }
+
+ @keyframes fade {
+ from {opacity: .9} 
+ to {opacity: 1}
+ }
+@media only screen and (min-width: 421px) and (max-width: 720px) {
+    #header{
+        width: fit-content;
+        height: 120px;
+    }
+  }
+
+  /* small screens */
+  @media only screen and (min-width: 0px) and (max-width: 420px) {
+    #header{
+        width: fit-content;
+        height: 80px;
+    }
+  }
