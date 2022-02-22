@@ -1,8 +1,6 @@
 #header{
     width: 100%;
-    height: 170px;
     background-color: #32aeb1;
-    position: relative;
 }
 #first-nav{
     display: flex;
@@ -11,6 +9,11 @@
     background-color: #32aeb1;
     flex-wrap: wrap;
     color: white;
+    position: fixed!important;
+    z-index: 1;
+    top: 0px;
+    width: 96%;
+    padding: 20px;
 }
 #first-nav>div:nth-child(1){
     width: 200px;
@@ -20,10 +23,11 @@
 #first-nav>div:nth-child(2){
     width: 550px;
     height: 50px;
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(2, 40% 60%);
     background-color: white;
     border-radius: 5px;
-    color:gray
+    color:gray;
 }
 #first-nav>div:nth-child(3){
     width: 80px;
@@ -46,25 +50,6 @@
     padding: 10px;
     background-color: #32aeb1;
 }
-#first-nav>div:nth-child(2)>div>input{
-    width: 355px;
-    height: 88%;
-    border: none;
-}
-#first-nav>div:nth-child(2)>div:nth-child(1){
-    border-radius: 5px;
-    width: 150px;
-    height: 100%;
-    font-size: 15px;
-    padding-left: 10px;
-    padding-right: 10px;
-}
-#first-nav>div:nth-child(2)>div:nth-child(3){
-    border-radius: 5px;
-    width: 363.5px;
-    height: 100%;
-    border:none;
-}
 .fa-upload{
     color: white;
     padding: 5px;
@@ -83,21 +68,35 @@
 }
 #first-nav>div:nth-child(2)>div:nth-child(1) p{
    border-right: 1px solid black;
+   margin-top: 10px;
+   padding-left: 5px;
+   position: relative;
 }
 #first-nav>div:nth-child(2)>div:nth-child(2){
-    width: 360px;
-    top: 52px;
-    position: absolute;
-    z-index: 52px;
-    left: 0;
-    background-color: red;
+    padding-left: 10px;
+ }
+ #first-nav>div:nth-child(2)>div:nth-child(2)>input{
+    width: 97%;
+    height: 41px;
+    border: none;
+    padding-top: 5px;
+    
+ }
+ #box{
+     width: 360px;
+     height: 300px;
+     border: 1px solid red;
+     display: none;
+     background-color: white;
+     z-index: 1;
  }
  #second-nav{
      display: flex;
      width: 100%;
-     height: 50px;
      margin: auto;
      justify-content: space-around;
+     position: relative;
+     margin-top: 90px;
  }
  #second-nav > div{
      display: flex;
@@ -121,6 +120,8 @@
      width: 100%;
      height: 40px;
      justify-content: center;
+     background-color: white;
+     position: relative;
  }
  #third-nav>p{
      width: 120px;
@@ -133,6 +134,7 @@
     width: 100%;
     margin: auto;
     padding-top: 20px;
+    background-color: white;
 }
 .slide{
      -webkit-animation-name:fade;
@@ -150,6 +152,7 @@
     margin:auto;
     display: flex;
     justify-content: space-evenly;
+    background-color: white;
 }
 #bullet-slide>div{
     width: 10px;
@@ -159,13 +162,14 @@
     background-color: green;
 }
 #text-content{
-    background-color: lightgray;
+    background-color: rgb(245, 244, 244);
     width: 100%;
 }
 #text-content>div{
     width: 97%;
     margin: auto;
     padding: 10px;
+    opacity: 0.7;
 }
 #text-content > div>p{
     text-align: justify;
@@ -184,6 +188,7 @@ span{
 }
 #footer{
     width: 100%;
+    background-color: white;
 }
 #footer>div{
     width: 90%;
@@ -265,9 +270,25 @@ span{
     #first-nav{
       display: grid;
       padding: 0px;
-      width: auto;
-      justify-content: start;
+      width: 100%;
+      grid-template-columns: repeat(1,1fr);
     }
+    #first-nav>div:nth-child(1){
+        margin-left: 5px;
+      }
+      #first-nav>div:nth-child(2){
+        margin: auto;
+        width: 95%;
+      }
+      #first-nav>div:nth-child(3){
+        margin-left: 5px;
+      }
+      #first-nav>div:nth-child(4){
+        margin-left: 5px;
+      }
+      #first-nav>div:nth-child(5){
+        margin-left: 5px;
+      }
     #third-nav{
         display: grid;
         padding: 0px;
@@ -275,17 +296,14 @@ span{
         height: auto;
         justify-content: start;
         align-items: flex-start;
-        background-color: #32aeb1;
+        background-color:white;
   }
   #second-nav{
     display: grid;
     padding: 0px;
     background-color: #32aeb1;
+    margin-top: 241px;
   }
-  #first-nav>div:nth-child(2){
-    width: 100%;
-    justify-content: start;
-}
 #main-slide{
     width: 100%;
     margin: auto;
@@ -301,7 +319,7 @@ span{
     #first-nav{
         display: grid;
         justify-content: start;
-        width: auto;
+        width: 363px;
       }
       #first-nav>div{
           margin-left: 5px;
@@ -310,9 +328,9 @@ span{
       }
       #third-nav{
         display: grid;
-        padding: 0px;
+        padding: 5px;
         justify-content: start;
-        background-color: #32aeb1;
+        background-color:white;
         width: auto;
         height: auto;
         align-items: flex-start;
@@ -321,6 +339,7 @@ span{
         display: grid;
         padding: 0px;
         background-color: #32aeb1;
+        margin-top: 301px;
       }
       #first-nav>div:nth-child(2){
         width: fit-content;
@@ -328,6 +347,23 @@ span{
     }
     #main-slide{
         width: 100%;
+        height: auto;
         margin: auto;
     }
+    #first-nav>div:nth-child(1){
+        margin-left: 5px;
+      }
+      #first-nav>div:nth-child(2){
+        margin: auto;
+        width: 100%;
+      }
+      #first-nav>div:nth-child(3){
+        margin-left: 5px;
+      }
+      #first-nav>div:nth-child(4){
+        margin-left: 5px;
+      }
+      #first-nav>div:nth-child(5){
+        margin-left: 5px;
+      }
   }

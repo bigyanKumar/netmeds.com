@@ -1,11 +1,17 @@
-document.querySelector(".fa-angle-down").addEventListener("click",popbox)
+document.querySelector("#first-nav>div:nth-child(2)>div:nth-child(1) p").addEventListener("click",popbox)
+count=1
 function popbox(){
-    Box = document.getElementById("box")
-    Box.style.display = "block"
+    count++
+    box = document.getElementById("box")
+    if(count%2==0)
+    {
+        box.style.display = "block"
+    }
+    else{
+        box.style.display = ""
+    }
+   
 }
-
-
-
 //  auto slide 
 var slideIndex = 0;
 showSlides();
