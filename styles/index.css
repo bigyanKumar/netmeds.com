@@ -468,14 +468,63 @@ span{
   .nxt-btn:hover img {
     opacity: 1;
   }
-  #netmeds-member{
+  .netmeds-member{
     display: grid;
-    grid-template-columns: repeat(5, 10% 30% 34% 15%  10%);
+    grid-template-columns: repeat(5, 10% 30% 40% 15%  10%);
     justify-content: space-between;
     align-items: center;
+    border-top: .8px solid rgb(141, 137, 137);
+    border-bottom: 0.8px solid rgb(145, 141, 141);
   }
-  #netmeds-member{
-    border: 1px solid red;
+  .netmeds-member>div>img{
+    width: 120px;
+    height: 30;
+  }
+  .netmeds-member>div:nth-child(3)
+  {
+    padding-left: 420px;
+  }
+  .netmeds-member>div:nth-child(4)
+  {
+    padding-left: 90px;
+  }
+  .netmeds-member>div>button{
+    padding: 6px 10px;
+    background-color: #32aeb1;
+    color: #fff;
+    border: none;
+    font-size: 17px;
+    border-radius: 5px;
+  }
+  .netmeds-mem{
+    display: grid;
+    grid-template-columns: repeat(5, 10% 35% 20%);
+    justify-content: space-between;
+    align-items: center;
+    border-top: .8px solid rgb(141, 137, 137);
+    border-bottom: 0.8px solid rgb(145, 141, 141);
+  }
+  .netmeds-mem>div>img{
+    width: 120px;
+    height: 30;
+  }
+  .netmeds-mem>div:nth-child(3)
+  {
+    padding-left: 420px;
+  }
+  .netmeds-mem>div:nth-child(3)
+  {
+    padding-left: 585px;
+  }
+  .netmeds-mem>div>button{
+    background-color: #32aeb1;
+    color: #fff;
+    border: none;
+    font-size: 17px;
+    border-radius: 5px;
+    width: 120px;
+    height: 40px;
+    padding: 5px 10px;
   }
   
 /* slider end */
