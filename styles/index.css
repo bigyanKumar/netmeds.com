@@ -5,6 +5,9 @@
 body{
     background-color: #f3f7fb!important;
 }
+*{
+  font-family: sans-serif;
+}
 #first-nav{
     display: flex;
     padding: 10px;
@@ -301,7 +304,6 @@ span{
 
 #payment-partner{
     width: 100%;
-    border:1px solid red;
     padding-top: 10px;
 }
 #payment-partner>div:nth-child(1){
@@ -322,10 +324,43 @@ span{
     padding-left: 20px;
 
 }
+#orders{
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+}
+#orders>div{
+  display: grid;
+  grid-template-columns: repeat(2, 80% 20%);
+  align-items: center;
+  padding-left: 7px;
+}
+#orders>div>div>img{
+  width: 100px;
+  height: 130px;
+}
+#orders>div>div>button{
+  padding: 10px 20px;
+  background-color:#32aeb1 ;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+}
+#orders>div:first-child{
+  border-right: 1px solid rgb(158, 151, 151);
+}
+#textformat >p:last-child{
+  color: #32aeb1;
+  font-size: 18px;
 
-
-
-
+}
+#textformat >p:last-child >i{
+  color: #32aeb1;
+  font-size: 18px;
+  padding-left: 10px;
+}
 /* slideer start */
 /* PRODUCTS */
 .product {
