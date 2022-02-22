@@ -314,6 +314,7 @@ span{
     font-size: 18px;
     text-align: right;
     color: red;
+    padding-right: 7px;
 
 
 }
@@ -433,7 +434,6 @@ span{
   .nxt-btn:hover img {
     opacity: 1;
   }
-  
   
 /* slider end */
 @-webkit-keyframes fade {
