@@ -8,14 +8,17 @@
     display: flex;
     padding: 10px;
     font-size: 20px;
+    background-color: #32aeb1;
+    flex-wrap: wrap;
     color: white;
 }
 #first-nav>div:nth-child(1){
-    width: 300px;
+    width: 200px;
     margin-left: 50px;
+    background-color: #32aeb1;
 }
 #first-nav>div:nth-child(2){
-    width: 700px;
+    width: 550px;
     height: 50px;
     display: flex;
     background-color: white;
@@ -23,21 +26,25 @@
     color:gray
 }
 #first-nav>div:nth-child(3){
-    width: 150px;
+    width: 80px;
    padding-top: 10px;
    margin-left: 20px;
+   background-color: #32aeb1;
 }
 #first-nav>div:nth-child(3){
-    width: 200px;
+    width: 130px;
     padding: 10px;
+    background-color: #32aeb1;
 }
 #first-nav>div:nth-child(4){
     width: 150px;
     padding: 10px;
+    background-color: #32aeb1;
 }
 #first-nav>div:nth-child(5){
-    width: 400px;
+    width: 200px;
     padding: 10px;
+    background-color: #32aeb1;
 }
 #first-nav>div:nth-child(2)>div>input{
     width: 355px;
@@ -87,7 +94,7 @@
  }
  #second-nav{
      display: flex;
-     width: 1000px;
+     width: 100%;
      height: 50px;
      margin: auto;
      justify-content: space-around;
@@ -124,7 +131,6 @@
  }
  #main-slide{
     width: 100%;
-    position: relative;
     margin: auto;
     padding-top: 20px;
 }
@@ -152,6 +158,96 @@
     border-radius: 5px;
     background-color: green;
 }
+#text-content{
+    background-color: lightgray;
+    width: 100%;
+}
+#text-content>div{
+    width: 97%;
+    margin: auto;
+    padding: 10px;
+}
+#text-content > div>p{
+    text-align: justify;
+    font-size: 14px;
+    opacity: .8;
+    font-family: sans-serif;
+}
+#text-content > div>h1{
+    text-align: justify;
+    font-size: 14px;
+    opacity: .8;
+    font-family: sans-serif;
+}
+span{
+    font-weight: bold;
+}
+#footer{
+    width: 100%;
+}
+#footer>div{
+    width: 90%;
+    margin: auto;
+}
+#footer>div:nth-child(1){
+   display: grid;
+   grid-template-columns: repeat(2,25% 60%);
+   align-items: center;
+}
+#footer>div:nth-child(1)>div>img{
+    color: rgb(19, 78, 22);
+    width: 80%;
+    height: 90%;
+}
+#footer>div:nth-child(1)>div>p{
+  color:black;
+  opacity: .9;
+  font-size: 18px;
+}
+#footer>div:nth-child(2){
+    display: grid;
+    grid-template-columns: repeat(4,25% 25% 25% 23%);
+ }
+ #footer>div:nth-child(2)>div>h1{
+   color:black;
+   opacity: .8;
+   font-size: 15px;
+   padding: 10px;
+ }
+ #footer>div:nth-child(2)>div>p{
+    color:black;
+    opacity: .9;
+    font-size: 15px;
+    padding: 1px;
+    padding-left: 10px;
+  }
+  #footer>div:nth-child(2)>div:nth-child(4)>input{
+      padding:5px;
+      margin-left: 6px;
+      width: 90%;
+      height: 30px;
+      border: none;
+      border-bottom: 1px solid gray;
+  }
+  #footer>div:nth-child(2)>div:nth-child(4)>div{
+    display: grid;
+    grid-template-columns: repeat(2,40% 40%);
+}
+#footer>div:nth-child(2)>div:nth-child(4)>div>img{
+    width: 100%;
+    padding-top: 10px;
+}
+#footer>div:nth-child(2)>div:nth-child(4)>div>img:last-child{
+    padding-left: 10px;
+}
+  #footer>div:nth-child(3){
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+ }
+ #footer>div:nth-child(3)>p{
+    padding-left: 2px;
+    opacity: .8;
+ }
 @-webkit-keyframes fade {
  from {opacity: .9} 
  to {opacity: 1}
@@ -164,14 +260,74 @@
 @media only screen and (min-width: 421px) and (max-width: 720px) {
     #header{
         width: fit-content;
-        height: 120px;
+        height: auto;
     }
+    #first-nav{
+      display: grid;
+      padding: 0px;
+      width: auto;
+      justify-content: start;
+    }
+    #third-nav{
+        display: grid;
+        padding: 0px;
+        width: auto;
+        height: auto;
+        justify-content: start;
+        align-items: flex-start;
+        background-color: #32aeb1;
   }
+  #second-nav{
+    display: grid;
+    padding: 0px;
+    background-color: #32aeb1;
+  }
+  #first-nav>div:nth-child(2){
+    width: 100%;
+    justify-content: start;
+}
+#main-slide{
+    width: 100%;
+    margin: auto;
+}
+}
 
   /* small screens */
   @media only screen and (min-width: 0px) and (max-width: 420px) {
     #header{
+        width: grid;
+        height: atuo;
+    }
+    #first-nav{
+        display: grid;
+        justify-content: start;
+        width: auto;
+      }
+      #first-nav>div{
+          margin-left: 5px;
+          padding: 5px;
+          background-color: #32aeb1;
+      }
+      #third-nav{
+        display: grid;
+        padding: 0px;
+        justify-content: start;
+        background-color: #32aeb1;
+        width: auto;
+        height: auto;
+        align-items: flex-start;
+  }
+      #second-nav{
+        display: grid;
+        padding: 0px;
+        background-color: #32aeb1;
+      }
+      #first-nav>div:nth-child(2){
         width: fit-content;
-        height: 80px;
+        justify-content: start;
+    }
+    #main-slide{
+        width: 100%;
+        margin: auto;
     }
   }
