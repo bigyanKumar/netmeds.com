@@ -1,5 +1,5 @@
 #partner-offer {
-<<<<<<< Updated upstream
+
     margin-top: 20px;
 }
 .partner {
@@ -72,14 +72,13 @@
 .pre-btn,
 .nxt-btn {
   border: none;
-  width: 10vw;
+  width: 10px;
   height: 100%;
   position: absolute;
   top: 0;
   display: flex;
   justify-content: center;
   align-items: center;
-  /* background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #fff 100%); */
   background-color: transparent;
   cursor: pointer;
   z-index: 8;
@@ -92,8 +91,7 @@
 
 .nxt-btn {
   right: 0;
-=======
-  margin-top: 20px;
+
 }
 .partner {
   position: relative;
@@ -110,7 +108,7 @@
 .partner-container {
    /* border: 1px solid red; */
   background-color: #f3f7fb;
-  padding: 0 10vw;
+  padding: 0 10px;
   display: flex;
   overflow-x: auto;
   scroll-behavior: smooth;
@@ -157,7 +155,7 @@
 
 
 
-.pre-btn,
+/* .pre-btn,
 .nxt-btn {
 border: none;
 width: 10vw;
@@ -167,7 +165,7 @@ top: 0;
 display: flex;
 justify-content: center;
 align-items: center;
-background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #fff 100%);
+background: transparent;
 cursor: pointer;
 z-index: 8;
 }
@@ -179,26 +177,21 @@ transform: rotate(180deg);
 
 .nxt-btn {
 right: 0;
->>>>>>> Stashed changes
+
 }
 
 .pre-btn img,
 .nxt-btn img {
-<<<<<<< Updated upstream
+  opacity: 0.2; 
   opacity: 0.2;
-=======
-opacity: 0.2;
->>>>>>> Stashed changes
-}
 
-.pre-btn:hover img,
+} */
+
+/* .pre-btn:hover img,
 .nxt-btn:hover img {
-<<<<<<< Updated upstream
   opacity: 1;
-=======
-opacity: 1;
->>>>>>> Stashed changes
-}
+  opacity: 1;
+} */
 
 /* Health Advice Articles */
 .health-card {

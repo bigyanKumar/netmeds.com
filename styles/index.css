@@ -303,6 +303,10 @@ span{
     width: 100%;
     /* border:1px solid red; */
     padding-top: 10px;
+    margin-bottom: 15px;
+}
+#paymentmargin {
+  margin-bottom: 15px;
 }
 #payment-partner>div:nth-child(1){
     display: grid;
@@ -321,6 +325,7 @@ span{
 #payment-partner>div:nth-child(1)>div>h1{
     font-size: 22px;
     padding-left: 20px;
+    
 
 }
 
@@ -346,7 +351,7 @@ span{
 
   }
   
-  .product-container {
+  .product-container,.product-container1 {
     /* border: 1px solid red; */
     background-color: #f3f7fb;
     display: flex;
@@ -358,7 +363,7 @@ span{
     display: none;
   }
   
-  .product-card {
+  .product-card,.product-card1 {
     border: 1px solid white;
     background-color: white;
     border-radius: 10px;
@@ -411,7 +416,7 @@ span{
   .pre-btn,
   .nxt-btn {
     border: none;
-    width: 10vw;
+    width: 10px;
     height: 100%;
     position: absolute;
     top: 0;
@@ -440,7 +445,7 @@ span{
   .pre-btn:hover img,
   .nxt-btn:hover img {
     opacity: 1;
-  }
+  } 
 
   /* health concern */
 
