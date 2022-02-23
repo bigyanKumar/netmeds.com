@@ -21,6 +21,7 @@ function signup(){
             arr = JSON.parse(localStorage.getItem("LoginUserDetails"))||[]
             arr.push(user)
             localStorage.setItem("LoginUserDetails",JSON.stringify(arr)) 
+            window.location.href="../index.html"
 
            //window.location.href = "../index.html"
 

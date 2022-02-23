@@ -63,3 +63,11 @@ function checkDetails(){
         
     }
 }
+document.querySelector("#userName").addEventListener("click", Profile)
+function Profile(){
+    if(logInUserDetails!=0){
+        window.location.href ="./profile/profile.html"
+    }else{
+        window.location.href = "./login&signup/login&signup.html"
+    }
+}

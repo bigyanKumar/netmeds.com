@@ -1,0 +1,62 @@
+#profileDiv{
+    width: 450px;
+    height: 600px;
+    border: 0.3px solid rgb(95, 92, 92);
+    margin-top: 150px;
+    margin-left: 33%;
+    margin-bottom: 40px;
+}
+#profileDiv>div:nth-child(1){
+    width: 200px;
+    height: 200px;
+    border: 1px solid black;
+    margin: auto;
+    border-radius: 100px;
+}
+#profileDiv>div:nth-child(2){
+    width:80%;
+    height: 50px;
+    border-bottom: 0.6px solid black;
+    margin: auto;
+    border-radius: 100px;
+    padding-top: 40px;
+}
+#profileDiv>div:nth-child(3){
+    width:80%;
+    height: 50px;
+    border-bottom: 0.6px solid black;
+    margin: auto;
+    border-radius: 100px;
+    padding-top: 40px;
+}
+#profileDiv>div:nth-child(4){
+    width:80%;
+    height: 50px;
+    border-bottom: 0.6px solid black;
+    margin: auto;
+    border-radius: 100px;
+    padding-top: 40px;
+}
+#profileDiv>button{
+    width:60%;
+    height: 40px;
+    border-top: 0.6px solid black;
+    margin: auto;
+    border-radius: 100px;
+    margin-top: 50px;
+    margin-left: 20%;
+}
+#profileDiv>div>p{
+    text-align: center;
+    font-size: 22px;
+    color: black;
+    font-weight: bold;
+    margin-top: 5px;
+}
+#profileDiv>div:nth-child(1)>img{
+    width: 200px;
+    height: 200px;
+    margin: auto;
+    border-radius: 100px;
+    border: 2px solid blue;
+}
