@@ -17,7 +17,7 @@
  .partner-container {
      /* border: 1px solid red; */
     background-color: #f3f7fb;
-    padding: 0 10vw;
+    padding: 0 10px;
     display: flex;
     overflow-x: auto;
     scroll-behavior: smooth;
@@ -71,7 +71,7 @@
 .pre-btn,
 .nxt-btn {
   border: none;
-  width: 10vw;
+  width: 10px;
   height: 100%;
   position: absolute;
   top: 0;

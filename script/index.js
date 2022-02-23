@@ -30,7 +30,7 @@ function showSlides() {
 
 
 // slider part
-const productContainers = [...document.querySelectorAll('.product-container')];
+const productContainers = [...document.querySelectorAll('.partner-container')];
 const nxtBtn = [...document.querySelectorAll('.nxt-btn')];
 const preBtn = [...document.querySelectorAll('.pre-btn')];
 
@@ -47,3 +47,20 @@ productContainers.forEach((item, i) => {
     })
 })
 // slider end
+
+const productContainer = [...document.querySelectorAll('.product-container')];
+const nxtBt = [...document.querySelectorAll('.nxt-btn')];
+const preBt = [...document.querySelectorAll('.pre-btn')];
+
+productContainer.forEach((item, i) => {
+    let containerDimension = item.getBoundingClientRect();
+    let containerWidtha = containerDimension.width;
+
+    nxtBt[i].addEventListener('click', () => {
+        item.scrollLeft += containerWidtha;
+    })
+
+    preBt[i].addEventListener('click', () => {
+        item.scrollLeft -= containerWidtha;
+    })
+})
