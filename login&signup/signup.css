@@ -1,0 +1,21 @@
+#form>div{
+display: flex;
+justify-content: space-between;
+}
+#form>div{
+    padding-right: 79px;
+}
+#form>p{
+    font-size: 10px;
+   margin-bottom: -5;
+}
+#form>input{
+    width: 300px;
+    padding: 2px;
+}
+#form>button{
+    width: 310px;
+    background-color: rgb(6, 51, 53);
+    color:white;
+    padding: 2px;
+}

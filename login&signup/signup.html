@@ -3,9 +3,10 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
-        <title>Netmeds.com: Indian Pharmcy</title>
+        <title>Netmeds.com: Sign Up</title>
         <link rel="stylesheet" href="../styles/index.css">
-        <link rel="stylesheet" href="./cart.css">
+        <link rel="stylesheet" href="./login&signup.css">
+        <link rel="stylesheet" href="./signup.css">
         <script src="https://kit.fontawesome.com/0a03bfd4cc.js" crossorigin="anonymous"></script>
     </head>
 <body>
@@ -25,20 +26,42 @@
             </div>
         </div>
         <div><i class="fa-solid fa-upload"></i>Upload</div>
-        <div><i class="fa-solid fa-cart-arrow-down"></i></i>Cart</div>
-        <div id="profile"><i class="fa-solid fa-address-card"></i>Sign in / Sign up</div>
+        <div onclick="window.location.href='../cart/cart.html'"><i class="fa-solid fa-cart-arrow-down"></i></i>Cart</div>
+        <div><i class="fa-solid fa-address-card"></i>Sign in / Sign up</div>
     </div>
 <!-- product page working Area -->
 
 
+<!-- https://www.netmeds.com/images/cms/wysiwyg/cms/1588773798_sign-in-banner-new.png -->
 
+<div id="login">
 
+<div>
+<img src="https://www.netmeds.com/images/cms/wysiwyg/cms/1588773798_sign-in-banner-new.png" alt="Login & sign up page">
+</div>
+<div>
+    <h1>Create Account</h1>
+<div id="form">
+    <p>Email Id</p>
+    <input type="email" id="email" >
+    <p>FIRST NAME</p>
+    <input type="text" id="name">
+    <p>LAST NAME</p>    
+    <input type="text" id="lastname">
+    <div>
+        <p>We have sent 6 digit OTP on</p>
+        <p id="mobile"></p>
+   
+</div>
+<p onclick="window.location.href='./login&signup.html'"><span>Change</span></p>
+<input type="number" id="otp">
+<p><span>Resend</span></p>
+<button id="submit">VERIFY</button>
 
-
-
-
-
-
+</div>
+</div>
+</div>
+<p id="tc">By continuing you agree to our <span>Terms of service </span> <br> and <span>Privacy & Legal Policy.</span></p>
 
 
 
@@ -51,7 +74,7 @@
 
 
 <!-- product page working area end -->
-   <div id="footer">
+   <!-- <div id="footer">
     <div>
         <div>
             <img src="https://www.netmeds.com/assets/gloryweb/images/netmeds-footer-logo.svg" alt="logo"/>
@@ -108,7 +131,7 @@
     <p>Beauty</p>
     <p>Copyright© 2022. All Rights Reserved.</p>
     </div>
-   </div>
+   </div> -->
 </body>
 </html>
-<script src="./cart.js"></script>
+<script src="./signup.js"></script>

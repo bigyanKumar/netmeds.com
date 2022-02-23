@@ -47,3 +47,19 @@ productContainers.forEach((item, i) => {
     })
 })
 // slider end
+logInUserDetails = JSON.parse(localStorage.getItem("LoginUserDetails"))||[]
+if(logInUserDetails!=0){
+document.querySelector("#profile").innerText =""
+Name = logInUserDetails[0].name
+console.log(Name)
+document.querySelector("#profile").innerText =Name
+}
+document.querySelector("#profile").addEventListener("click",checkDetails)
+function checkDetails(){
+    if(logInUserDetails==0){
+        window.location.href="./login&signup/login&signup.html"
+    }
+    else{
+        
+    }
+}
