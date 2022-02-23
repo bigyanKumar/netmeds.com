@@ -95,7 +95,11 @@
 
 .pre-btn img,
 .nxt-btn img {
+<<<<<<< HEAD
   opacity: 0.95;
+=======
+  opacity: 0.2;
+>>>>>>> 0250e24911433e8ecc728482bbbafdc712ca013d
 }
 
 .pre-btn:hover img,
@@ -126,6 +130,7 @@
 .Advice-image>h4{
   margin-left: 10px;
 }
+<<<<<<< HEAD
 .Healthimg{
   padding-left: 26%;
   padding-top: 20px;
@@ -133,5 +138,8 @@
 .text{
   padding-top: 120px;
 }
+=======
+
+>>>>>>> 0250e24911433e8ecc728482bbbafdc712ca013d
 
 
