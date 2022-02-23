@@ -7,8 +7,9 @@
     padding: 10px;
 }
 .partner-category {
+   font-family: LotoBold;
     padding: 0 10vw;
-    font-size: 30px;
+    font-size: 24px;
     font-weight: 500;
     margin-bottom: 10px;
     text-transform: capitalize;
@@ -60,9 +61,13 @@
       /* margin-bottom: 15px; */
     overflow: hidden;
   }
+  .partner-info>h2 {
+    font-size: 20px;
+    font-family: LatoSemiBold;
+
+}
 
 
-  
 .pre-btn,
 .nxt-btn {
   border: none;
@@ -97,5 +102,30 @@
 .nxt-btn:hover img {
   opacity: 1;
 }
+
+/* Health Advice Articles */
+.health-card {
+  border: 1px solid white;
+  background-color: white;
+  border-radius: 10px;
+  flex: 0 0 auto;
+  width: 380px;
+  height: 200px;
+  margin-right: 40px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  
+}
+.advice-thumb {
+  width: 100%;
+  height: 25%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.Advice-image>h4{
+  margin-left: 10px;
+}
+
 
 
