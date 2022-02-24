@@ -1,0 +1,14 @@
+#main{
+    width: 100%;
+    margin-top: 50px;
+    border: 1px solid red;
+    display: flex;
+    justify-content: space-around;
+}
+#main>div:first-child{
+    width: 25%;
+    height: 50px;
+}
+#main>div:last-child{
+    width: 72%;
+}
