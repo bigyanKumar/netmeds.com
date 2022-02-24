@@ -8,6 +8,7 @@ tempDeta = JSON.parse(localStorage.getItem("TempProductItem"))||[]
         p = document.createElement("p")
         p.innerText = event.dis+"%off"
         img=document.createElement("img")
+        img.setAttribute("src",event.img)
         h1 = document.createElement("h1")
         h1.innerText=event.name
         p2 = document.createElement("p")
@@ -15,7 +16,7 @@ tempDeta = JSON.parse(localStorage.getItem("TempProductItem"))||[]
         p3 = document.createElement("p")
         p3.innerText ="Best Price: "+(event.aprice*event.dis/100)
         p4 = document.createElement("p")
-        p4.innerText = "MRP RS: "+event.aprice
+        p4.innerText = "MRP Rs: "+event.aprice
         button = document.createElement("button")
         button.innerText = "ADD TO CART"
         div1.append(p,img,h1,p2,p3,p4,button) 
