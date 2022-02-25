@@ -122,3 +122,13 @@ function ayush(){
     window.location.href = "./product/product.html"
 
   }
+  function changeOn(event){
+    localStorage.removeItem("TempProductItem")
+    sortDeta = ProductDetaBase.filter(function(ele){
+        return ele.cat.includes(event)
+        
+    }) 
+    localStorage.setItem("TempProductItem",JSON.stringify(sortDeta))
+    window.location.href = "./product/product.html"
+
+  }

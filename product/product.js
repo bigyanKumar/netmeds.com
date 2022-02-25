@@ -2,11 +2,13 @@ tempDeta = JSON.parse(localStorage.getItem("TempProductItem"))||[]
     document.querySelector("#outof").innerText = tempDeta.length
 all_deta = JSON.parse(localStorage.getItem("productDetaBase"))||[]
     document.querySelector("#total").innerText = all_deta.length
+
 showDeta()
+
 function showDeta(){
+    count =0
     document.querySelector("#productItem").innerHTML = ""
     tempDeta.map(function(event){
-
         div1 = document.createElement("div")
         p = document.createElement("p")
         p.innerText = event.dis+"%off"
@@ -25,6 +27,7 @@ function showDeta(){
         div1.append(p,img,h1,p2,p3,p4,button) 
         console.log(div1)
         document.querySelector("#productItem").append(div1)
+
     })
 }
 sortBy = JSON.parse(localStorage.getItem("TempProductItem"))||[]
@@ -63,4 +66,17 @@ function sortbydis(){
     })
     console.log(dis)
     showDeta(dis)
+}
+document.querySelector("#login").addEventListener("click",logincheck)
+logindetails = JSON.parse(localStorage.getItem("LoginUserDetails"))||[]
+function logincheck(){
+    console.log("1")
+    if (logindetails.length!=null)
+    {
+        
+        window.location.href = "../login&signup/login&signup.html"
+    }
+    else{
+
+    }
 }
