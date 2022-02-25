@@ -24,13 +24,15 @@ function showDeta(){
         p4.innerText = "MRP Rs: "+event.aprice
         button = document.createElement("button")
         button.innerText = "ADD TO CART"
+        button.addEventListener("click",function(){
+            addcard(event)
+        })
         div1.append(p,img,h1,p2,p3,p4,button) 
         console.log(div1)
         document.querySelector("#productItem").append(div1)
 
     })
 }
-sortBy = JSON.parse(localStorage.getItem("TempProductItem"))||[]
 function sortbyrating(){
     
     console.log("rating")
@@ -79,4 +81,27 @@ function logincheck(){
     else{
 
     }
+}
+function Onpage(event){
+    // localStorage.removeItem("TempProductItem")
+ sortDeta = all_deta.filter(function(ele){
+    return ele.cat.includes(event)
+})
+localStorage.setItem("TempProductItem",JSON.stringify(sortDeta))
+// not working
+    showDeta(tempDeta)
+}
+
+// cart deta work area
+
+cartItem = JSON.parse(localStorage.getItem("cartDeta"))||[]
+
+function addcard(event){
+    event.qnt = 1
+    cartItem.push(event)
+    localStorage.setItem("cartDeta",JSON.stringify(cartItem))
+}
+document.querySelector("#cart").addEventListener("click", cartPage)
+function cartPage(){
+    window.location.href = "../cart/cart.html"
 }

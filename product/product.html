@@ -7,7 +7,6 @@
         <link rel="stylesheet" href="../styles/index.css">
         <link rel="stylesheet" href="./product.css">
         <script src="https://kit.fontawesome.com/0a03bfd4cc.js" crossorigin="anonymous"></script>
-        <script src="./onpage.js"></script>
     </head>
 <body>
     <div id="first-nav" class="header-show">
@@ -18,7 +17,7 @@
         </div>
         <div>
             <div>
-                <div><p id="popup-box">Diliver to 805104<i class="fa-solid fa-angle-down"></i></p>
+                <div><p id="popup-box">Deliver to 805104<i class="fa-solid fa-angle-down"></i></p>
              </div>
             </div>
             <div>
@@ -26,44 +25,45 @@
             </div>
         </div>
         <div class="cursor" ><i class="fa-solid fa-upload"></i >Upload</div>
-        <div class="cursor" ><i class="fa-solid fa-cart-arrow-down"></i></i>Cart</div>
+        <div class="cursor" id="cart"><i class="fa-solid fa-cart-arrow-down"></i></i>Cart</div>
         <div class="cursor" id="login" ><i class="fa-solid fa-address-card"></i class="cursor" >Sign in / Sign up</div>
     </div>
     <div id="header">
         <div id="second-nav">
-            <div><div><i class="fa-solid fa-prescription-bottle-medical"></i></div><p class="cursor" onclick="change(ele='diabetes')">Medicine</p></div>
-            <div><div><i class="fa-solid fa-spa"></i></div><p class="cursor" onclick="change(ele='ayush')" >Wellness</p></div>
-            <div><div><i class="fa-solid fa-vials"></i></div><p class="cursor" onclick="change(ele='deveces')">Lab Test</p></div>
-            <div><div><i class="fa-solid fa-face-smile"></i></div><p class="cursor" onclick="change(ele='eyewear')" >Beauty</p></div>
-            <div><div><i class="fa-solid fa-book-medical"></i></div><p class="cursor" onclick="change(ele='covid')">Health Corner</p></div>
+            <div><div><i class="fa-solid fa-prescription-bottle-medical"></i></div><p class="cursor" onclick="Onpage(ele='diabetes')">Medicine</p></div>
+            <div><div><i class="fa-solid fa-spa"></i></div><p class="cursor" onclick="Onpage(ele='ayush')" >Wellness</p></div>
+            <div><div><i class="fa-solid fa-vials"></i></div><p class="cursor" onclick="Onpage(ele='deveces')">Lab Test</p></div>
+            <div><div><i class="fa-solid fa-face-smile"></i></div><p class="cursor" onclick="Onpage(ele='eyewear')" >Beauty</p></div>
+            <div><div><i class="fa-solid fa-book-medical"></i></div><p class="cursor" onclick="Onpage(ele='covid')">Health Corner</p></div>
        </div>
     </div>
     
        
        <div id="third-nav">
-           <p class="cursor" onclick="change(ele='covid')">COVID Essentials</p>
-           <p class="cursor" onclick="change(ele='diabetes')">Diabetes</p>
-           <p class="cursor" onclick="change(ele='eyewear')">Eyewear</p>
-           <p class="cursor"  onclick="change(ele='ayush')">Ayush</p>
-           <p  class="cursor" onclick="change(ele='fitness')">Fitness</p>
-           <p class="cursor" onclick="change(ele='mom')">Mom & Baby</p>
-           <p class="cursor"  onclick="change(ele='devices')">Devices</p>
-           <p class="cursor" onclick="change(ele='surgicals')">Surgicals</p>
-           <p class="cursor" onclick="change(ele='sexual')">Sexual Wellness</p>
-           <p class="cursor"  onclick="change(ele='treatments')">Treatments</p>
+           <p class="cursor" onclick="Onpage(ele='covid')">COVID Essentials</p>
+           <p class="cursor" onclick="Onpage(ele='diabetes')">Diabetes</p>
+           <p class="cursor" onclick="Onpage(ele='eyewear')">Eyewear</p>
+           <p class="cursor"  onclick="Onpage(ele='ayush')">Ayush</p>
+           <p  class="cursor" onclick="Onpage(ele='fitness')">Fitness</p>
+           <p class="cursor" onclick="Onpage(ele='mom')">Mom & Baby</p>
+           <p class="cursor"  onclick="Onpage(ele='devices')">Devices</p>
+           <p class="cursor" onclick="Onpage(ele='surgicals')">Surgicals</p>
+           <p class="cursor" onclick="Onpage(ele='sexual')">Sexual Wellness</p>
+           <p class="cursor"  onclick="Onpage(ele='treatments')">Treatments</p>
        </div>
 <!-- product page working Area -->
 <div id="main">
     <div id="ctg">
         <p>Category</p>
-        <p class="cursor" onclick="change(ele='ayush')">Ayush</p>
-        <p class="cursor" onclick="change(ele='fitness')">Fitness</p>
-        <p class="cursor" onclick="change(ele='mom')">Mom & Baby</p>
-        <p class="cursor" onclick="change(ele='sexual')">Sexual Wellness</p>
-        <p class="cursor" onclick="change(ele='treatments')">Treatments</p>
-        <p class="cursor" onclick="change(ele='deveces')">Devices</p>
-        <p class="cursor" onclick="change(ele='diabetes')">Health Conditions</p>
-        <p class="cursor" onclick="change(ele='fitness')">Otc Deals</p>
+        <p class="cursor" onclick="Onpage(ele='')">All Items</p>
+        <p class="cursor" onclick="Onpage(ele='ayush')">Ayush</p>
+        <p class="cursor" onclick="Onpage(ele='fitness')">Fitness</p>
+        <p class="cursor" onclick="Onpage(ele='mom')">Mom & Baby</p>
+        <p class="cursor" onclick="Onpage(ele='sexual')">Sexual Wellness</p>
+        <p class="cursor" onclick="Onpage(ele='treatments')">Treatments</p>
+        <p class="cursor" onclick="Onpage(ele='deveces')">Devices</p>
+        <p class="cursor" onclick="Onpage(ele='diabetes')">Health Conditions</p>
+        <p class="cursor" onclick="Onpage(ele='fitness')">Otc Deals</p>
     </div>
     <div>
        <div id="sort">
