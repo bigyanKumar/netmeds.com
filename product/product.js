@@ -23,6 +23,8 @@ function showDeta(arr){
         p4 = document.createElement("p")
         p4.innerText = "MRP Rs: "+event.aprice
         button = document.createElement("button")
+        button.setAttribute("id","cartButton")
+        button.setAttribute("class","cursor")
         button.innerText = "ADD TO CART"
         button.addEventListener("click",function(){
             addcard(event)

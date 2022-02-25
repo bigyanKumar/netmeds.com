@@ -104,3 +104,8 @@
     font-size: 25px;
     margin-left: -60px;
 }
+#cartButton:hover{
+    background-color: black;
+    color: white;
+    font-size: 15px;
+}
