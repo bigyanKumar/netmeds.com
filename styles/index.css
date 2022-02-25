@@ -8,6 +8,9 @@ body{
 *{
   font-family: sans-serif;
 }
+.cursor{
+  cursor: pointer;
+}
 #first-nav{
     display: flex;
     padding: 10px;

@@ -27,9 +27,10 @@
     margin-left: 10%;
 }
 #productItem>div>button{
-    height: 20px;
+    height: 30px;
     width: 100%;
-    background-color: black;
+    border: none;
+    background-color: #32aeb1;
     border-radius: 5px;
     color: white;
     font-size: 12px;

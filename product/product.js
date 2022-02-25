@@ -1,6 +1,7 @@
 tempDeta = JSON.parse(localStorage.getItem("TempProductItem"))||[]
-    document.querySelector("#outof").innerText = tempDeta.length-1
-console.log(tempDeta.length-1)
+    document.querySelector("#outof").innerText = tempDeta.length
+all_deta = JSON.parse(localStorage.getItem("productDetaBase"))||[]
+    document.querySelector("#total").innerText = all_deta.length
 showDeta()
 function showDeta(){
     document.querySelector("#productItem").innerHTML = ""
@@ -26,9 +27,40 @@ function showDeta(){
         document.querySelector("#productItem").append(div1)
     })
 }
-
-
+sortBy = JSON.parse(localStorage.getItem("TempProductItem"))||[]
+function sortbyrating(){
     
-    alldeta = tempDeta = JSON.parse(localStorage.getItem("productDetaBase"))||[]
+    console.log("rating")
+   rating= tempDeta.sort(function(a,b){
+        return b.rat-a.rat;
+    })
+    console.log(rating)
+    showDeta(rating)
+}
+function hightolow(){
+    
+    console.log("hightolow")
+   htl = tempDeta.sort(function(a,b){
+        return b.aprice-a.aprice
+    })
+    console.log(htl)
+    showDeta(htl)
 
-    document.querySelector("#total").innerText = alldeta.length-1
+}
+function lowtohigh(){
+    
+    console.log("lowto high")
+    lth = tempDeta.sort(function(a,b){
+       return a.aprice-b.aprice
+    })
+    console.log(lth)
+    showDeta(lth)
+}
+function sortbydis(){
+    console.log("dis")
+    dis = tempDeta.sort(function(a,b){
+        return b.dis-a.dis
+    })
+    console.log(dis)
+    showDeta(dis)
+}

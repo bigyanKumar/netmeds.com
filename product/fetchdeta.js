@@ -44,6 +44,7 @@ function eyewear(){
  // console.log("eyewear")  
 }
 function ayush(){
+  console.log("1")
     localStorage.removeItem("TempProductItem")
     deta = "ayush"
     sortDeta = ProductDetaBase.filter(function(ele){
@@ -112,7 +113,7 @@ function ayush(){
   }
   function devices(){
     localStorage.removeItem("TempProductItem")
-    deta = "devices" 
+    deta = "diveces" 
     sortDeta = ProductDetaBase.filter(function(ele){
         return ele.cat.includes(deta)
         

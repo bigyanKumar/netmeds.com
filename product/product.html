@@ -7,6 +7,7 @@
         <link rel="stylesheet" href="../styles/index.css">
         <link rel="stylesheet" href="./product.css">
         <script src="https://kit.fontawesome.com/0a03bfd4cc.js" crossorigin="anonymous"></script>
+        <script src="./onpage.js"></script>
     </head>
 <body>
     <div id="first-nav" class="header-show">
@@ -24,46 +25,46 @@
                 <input type="text" placeholder="Search for medicine & wellness Products....">
             </div>
         </div>
-        <div><i class="fa-solid fa-upload"></i>Upload</div>
-        <div><i class="fa-solid fa-cart-arrow-down"></i></i>Cart</div>
-        <div><i class="fa-solid fa-address-card"></i>Sign in / Sign up</div>
+        <div class="cursor" ><i class="fa-solid fa-upload"></i >Upload</div>
+        <div class="cursor" ><i class="fa-solid fa-cart-arrow-down"></i></i>Cart</div>
+        <div class="cursor" ><i class="fa-solid fa-address-card"></i class="cursor" >Sign in / Sign up</div>
     </div>
     <div id="header">
         <div id="second-nav">
-            <div><div><i class="fa-solid fa-prescription-bottle-medical"></i></div><p>Medicine</p></div>
-            <div><div><i class="fa-solid fa-spa"></i></div><p>Wellness</p></div>
-            <div><div><i class="fa-solid fa-vials"></i></div><p>Lab Test</p></div>
-            <div><div><i class="fa-solid fa-face-smile"></i></div><p>Beauty</p></div>
-            <div><div><i class="fa-solid fa-book-medical"></i></div><p>Health Corner</p></div>
+            <div><div><i class="fa-solid fa-prescription-bottle-medical"></i></div><p class="cursor" >Medicine</p></div>
+            <div><div><i class="fa-solid fa-spa"></i></div><p class="cursor" >Wellness</p></div>
+            <div><div><i class="fa-solid fa-vials"></i></div><p class="cursor" >Lab Test</p></div>
+            <div><div><i class="fa-solid fa-face-smile"></i></div><p class="cursor" >Beauty</p></div>
+            <div><div><i class="fa-solid fa-book-medical"></i></div><p class="cursor" >Health Corner</p></div>
        </div>
     </div>
     
        
        <div id="third-nav">
-           <p>COVID Essentials</p>
-           <p>Diabetes</p>
-           <p>Eyewear</p>
-           <p>Ayush</p>
-           <p>Fitness</p>
-           <p>Mom & Baby</p>
-           <p>Devices</p>
-           <p>Surgicals</p>
-           <p>Sexual Wellness</p>
-           <p>Treatments</p>
+           <p class="cursor" onclick="change(ele='covid')">COVID Essentials</p>
+           <p class="cursor" onclick="change(ele='diabetes')">Diabetes</p>
+           <p class="cursor" onclick="change(ele='eyewear')">Eyewear</p>
+           <p class="cursor"  onclick="change(ele='ayush')">Ayush</p>
+           <p  class="cursor" onclick="change(ele='fitness')">Fitness</p>
+           <p class="cursor" onclick="change(ele='mom')">Mom & Baby</p>
+           <p class="cursor"  onclick="change(ele='devices')">Devices</p>
+           <p class="cursor" onclick="change(ele='surgicals')">Surgicals</p>
+           <p class="cursor" onclick="change(ele='sexual')">Sexual Wellness</p>
+           <p class="cursor"  onclick="change(ele='treatments')">Treatments</p>
        </div>
 <!-- product page working Area -->
 <div id="main">
     <div id="ctg">
         <p>Category</p>
-        <p>Ayush</p>
-        <p>Fitness</p>
-        <p>Mom & Baby</p>
-        <p>Sexual Wellness</p>
-        <p>Treatments</p>
-        <p>Devices</p>
-        <p>Health Conditions</p>
-        <p>Otc Deals</p>
-        <p>All Deta</p>
+        <p class="cursor" onclick="change(ele='ayush')">Ayush</p>
+        <p class="cursor" onclick="change(ele='fitness')">Fitness</p>
+        <p class="cursor" onclick="change(ele='mom')">Mom & Baby</p>
+        <p class="cursor" onclick="change(ele='sexual')">Sexual Wellness</p>
+        <p class="cursor" onclick="change(ele='treatments')">Treatments</p>
+        <p class="cursor" onclick="change(ele='devices')">Devices</p>
+        <p class="cursor" onclick="change(ele='diabetes')">Health Conditions</p>
+        <p class="cursor" onclick="change(ele='fitness')">Otc Deals</p>
+        <p class="cursor" onclick="change(ele='')">All Deta</p>
     </div>
     <div>
        <div id="sort">
@@ -76,10 +77,10 @@
         </div>
            <div>
                <p>Sort by:</p>
-               <button >Popularity</button>
-               <button>High to Low</button>
-               <button>Low to High</button>
-               <button>Discount</button>
+               <button class="cursor"  onclick="sortbyrating()">Popularity</button>
+               <button class="cursor" onclick="hightolow()">High to Low</button>
+               <button class="cursor" onclick="lowtohigh()">Low to High</button>
+               <button class="cursor"  onclick="sortbydis()">Discount</button>
            </div>
        </div>
         <div id="productItem"></div>
@@ -94,7 +95,7 @@
    <div id="footer">
     <div>
         <div>
-            <img src="https://www.netmeds.com/assets/gloryweb/images/netmeds-footer-logo.svg" alt="logo"/>
+            <img class="cursor"  src="https://www.netmeds.com/assets/gloryweb/images/netmeds-footer-logo.svg" alt="logo"/>
         </div>
         <div>
             <p>Netmeds.com, India Ki Pharmacy, is brought to you by the Dadha & Company – one of India’s most trusted pharmacies, with over 100 years’ experience in dispensing quality medicines.</p>
@@ -102,51 +103,51 @@
     </div>
     <div>
         <div>
-            <h1>COMPANY</h1>
-            <p>About Netmeds</p>
-            <p>Customers Speak</p>
-            <p>In the News</p>
-            <p>Career</p>
-            <p>Terms and Conditions</p>
-            <p>Privacy Policy</p>
-            <p>Fees and Payments Policy</p>
-            <p>Shipping and Delivery Policy</p>
-            <p>Return, Refund and Cancellation Policy</p>
-            <p>Contact</p>
+            <h1 class="cursor" >COMPANY</h1>
+            <p class="cursor" >About Netmeds</p>
+            <p class="cursor" >Customers Speak</p>
+            <p class="cursor" >In the News</p>
+            <p class="cursor" >Career</p>
+            <p class="cursor" >Terms and Conditions</p>
+            <p class="cursor" >Privacy Policy</p>
+            <p class="cursor" >Fees and Payments Policy</p>
+            <p class="cursor" >Shipping and Delivery Policy</p>
+            <p class="cursor" >Return, Refund and Cancellation Policy</p>
+            <p class="cursor" >Contact</p>
         </div>
         <div>
-            <h1>SHOPPING</h1>
-            <p>Browse by A-Z</p>
-            <p>Browse by Manufacturers</p>
-            <p>Health Articles</p>
-            <p>Offers / Coupons</p>
-            <p>FAQs</p>
+            <h1 class="cursor" >SHOPPING</h1>
+            <p class="cursor" >Browse by A-Z</p>
+            <p class="cursor" >Browse by Manufacturers</p>
+            <p class="cursor" >Health Articles</p>
+            <p class="cursor" >Offers / Coupons</p>
+            <p class="cursor" >FAQs</p>
         </div>
         <div>
-            <h1>SOCIAL</h1>
-            <p>Patients Alike</p>
-            <p>Facebook</p>
-            <p>Twitter</p>
-            <p>LinkedIn</p>
-            <p>Youtube</p>
-            <p>Refer & Earn</p>
+            <h1 class="cursor" >SOCIAL</h1>
+            <p class="cursor" >Patients Alike</p>
+            <p class="cursor" >Facebook</p>
+            <p class="cursor" >Twitter</p>
+            <p class="cursor" >LinkedIn</p>
+            <p class="cursor" >Youtube</p>
+            <p class="cursor" >Refer & Earn</p>
         </div>
         <div>
             <h1>SUBSCRIBE TO OUR NEWSLETTER</h1>
             <p>Get a free subscription to our health and fitness tip and stay tuned to our latest offers</p>
             <input type="email" placeholder="Enter your email">
             <div>
-                <img src="https://www.netmeds.com/assets/gloryweb/images/icons/play_store.png" alt="play_store">
-                <img src="https://www.netmeds.com/assets/gloryweb/images/icons/app_store.png" alt="I-store">
+                <img class="cursor"  src="https://www.netmeds.com/assets/gloryweb/images/icons/play_store.png" alt="play_store">
+                <img class="cursor" src="https://www.netmeds.com/assets/gloryweb/images/icons/app_store.png" alt="I-store">
             </div>
         </div>
     </div>
     <div>
-    <p>Medicine</p>
-    <p>Wellness</p>
-    <p>Lab Tests</p>
-    <p>Beauty</p>
-    <p>Copyright© 2022. All Rights Reserved.</p>
+    <p class="cursor" >Medicine</p>
+    <p class="cursor" >Wellness</p>
+    <p class="cursor" >Lab Tests</p>
+    <p class="cursor" >Beauty</p>
+    <p class="cursor" >Copyright© 2022. All Rights Reserved.</p>
     </div>
    </div>
 </body>
