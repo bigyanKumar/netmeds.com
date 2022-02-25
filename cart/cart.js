@@ -7,15 +7,15 @@ document.querySelector("#profile").innerText = Name
 }
 
 logindetails = JSON.parse(localStorage.getItem("LoginUserDetails"))||[]
-//document.querySelector("#login").addEventListener("click",logincheck)
-// function logincheck(){
-//     console.log("1")
-//     if (lo)
-//     {
+document.querySelector("#profile").addEventListener("click", logincheck)
+function logincheck(){
+    console.log("1")
+    if (logindetails.length==0)
+    {
         
-//         window.location.href = "../login&signup/login&signup.html"
-//     }
-// }
+        window.location.href = "../login&signup/login&signup.html"
+    }
+}
 
 
 cartItem = JSON.parse(localStorage.getItem("cartDeta"))||[]
@@ -25,7 +25,7 @@ totalP = 0
 totalDis =0
 totalMrp =0
 document.querySelector("#cartitem").innerHTML =""
-if(cartItem.length!=null){
+if(cartItem.length!=0){
     cartItem.map(function(ele,ind){
         div = document.createElement("div")
         img = document.createElement("img")
@@ -78,7 +78,9 @@ if(cartItem.length!=null){
 
 }
 else{
+    document.querySelector("#main").innerHTML =""
     alert("there is No Item")
+    
 }
 }
 

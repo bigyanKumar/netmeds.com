@@ -1,14 +1,14 @@
 tempDeta = JSON.parse(localStorage.getItem("TempProductItem"))||[]
-    document.querySelector("#outof").innerText = tempDeta.length
 all_deta = JSON.parse(localStorage.getItem("productDetaBase"))||[]
     document.querySelector("#total").innerText = all_deta.length
 
-showDeta()
+showDeta(tempDeta)
 
-function showDeta(){
+function showDeta(arr){
     count =0
+    console.log(arr)
     document.querySelector("#productItem").innerHTML = ""
-    tempDeta.map(function(event){
+    arr.map(function(event){
         div1 = document.createElement("div")
         p = document.createElement("p")
         p.innerText = event.dis+"%off"
@@ -28,10 +28,11 @@ function showDeta(){
             addcard(event)
         })
         div1.append(p,img,h1,p2,p3,p4,button) 
-        console.log(div1)
         document.querySelector("#productItem").append(div1)
-
+        document.querySelector("#outof").innerText = ++count
+        //console.log(count)
     })
+    
 }
 function sortbyrating(){
     
@@ -83,13 +84,14 @@ function logincheck(){
     }
 }
 function Onpage(event){
-    // localStorage.removeItem("TempProductItem")
+    count=0
+localStorage.removeItem("TempProductItem")
  sortDeta = all_deta.filter(function(ele){
     return ele.cat.includes(event)
 })
-localStorage.setItem("TempProductItem",JSON.stringify(sortDeta))
-// not working
-    showDeta(tempDeta)
+//localStorage.setItem("TempProductItem",JSON.stringify(sortDeta))
+tempDeta=sortDeta
+showDeta(tempDeta)
 }
 
 // cart deta work area
@@ -104,4 +106,18 @@ function addcard(event){
 document.querySelector("#cart").addEventListener("click", cartPage)
 function cartPage(){
     window.location.href = "../cart/cart.html"
+}
+// 
+
+
+
+
+
+//
+
+logInUserDetails = JSON.parse(localStorage.getItem("LoginUserDetails"))||[]
+if(logInUserDetails!=0){
+Name = logInUserDetails[0].name
+console.log(Name)
+document.querySelector("#login").innerText = Name
 }
