@@ -86,3 +86,16 @@ totalMrp =0
 
     console.log(totalP,totalDis,totalMrp)
 }
+ 
+
+address = JSON.parse(localStorage.getItem("formDataSub"))||[]
+
+document.querySelector("#sub").addEventListener("click", Submit)
+function Submit(){
+    if(address.length>0){
+        window.location.href = "./checkout.html"
+    }
+    else{
+        alert("Please fill Address")
+    }
+}
