@@ -75,11 +75,27 @@
            <p>Items</p>
         </div>
            <div>
-               <p>Sort by:</p>
                <button class="cursor"  onclick="sortbyrating()">Popularity</button>
                <button class="cursor" onclick="hightolow()">High to Low</button>
                <button class="cursor" onclick="lowtohigh()">Low to High</button>
                <button class="cursor"  onclick="sortbydis()">Discount</button>
+               <select class="cursor" onchange="filter()" id="filterbyprice" >
+                   <option value=""> Price</option>
+                   <option value="500">> 500</option>
+                   <option value="1000">> 1000</option>
+                   <option value="1500">> 1500</option>
+                   <option value="2000">> 2000</option>
+               </select>
+               <select class="cursor" onchange="filter()" id="filterbydis" >
+                <option value="">Discount</option>
+                <option value="10">> 10%</option>
+                <option value="15">> 15%</option>
+                <option value="20">> 20%</option>
+                <option value="30">> 30%</option>
+                <option value="40">> 40%</option>
+                <option value="50">> 50%</option>
+            </select>
+               <button class="cursor" value="" onclick="reset()" id="reset">Reset</button>
            </div>
        </div>
         <div id="productItem"></div>

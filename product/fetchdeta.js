@@ -34,6 +34,45 @@ function searchDeta(){
 
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // function diabetes(){
 //     localStorage.removeItem("TempProductItem")
 //     deta = "diabetes"

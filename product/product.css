@@ -8,7 +8,7 @@
     justify-content: space-evenly;
     gap: 7px;
     margin-bottom: 20px;
-    overflow-x: hidden;
+    overflow-x:hidden;
     overflow: scroll;
 }
 #productItem>div{
@@ -69,21 +69,32 @@
     box-sizing: border-box;
 }
 #sort{
-    display: grid;
-    grid-template-columns: repeat(5, 30% 60%);
-    justify-content: space-between;
+    display: flex;
+    /* grid-template-columns: repeat(6, 20%); */
 }
 #sort>div{
     display: flex;
+    flex-wrap: wrap;
     gap: 5px;
 }
 #sort>div>button{
+    width: 90px;
+    height: 30px;
+    margin-top: 12px;
+    margin-left: 20px;
+}
+#sort>div>select{
     width: 100px;
     height: 30px;
     margin-top: 12px;
-    margin-left: 40px;
+    margin-left: 20px;
 }
 #sort>div>button:hover{
+    color: blue;
+    border: .3px solid blue;
+    font-weight: bold;
+}
+#sort>div>select:hover{
     color: blue;
     border: .3px solid blue;
     font-weight: bold;

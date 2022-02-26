@@ -36,6 +36,52 @@ function showDeta(arr){
     })
     
 }
+
+// filter deta function
+
+    function filter(){
+        price = document.getElementById("filterbyprice").value
+        discount = document.getElementById("filterbydis").value
+        filterPrice(price,discount)
+    }
+
+
+    function filterPrice(P,discount){
+        bag =[]
+       for(var i=0; i<tempDeta.length;i++){
+           if(tempDeta[i].aprice>P && tempDeta[i].dis> discount)
+           {
+               bag.push(tempDeta[i])
+           }
+       }showDeta(bag)
+    }
+
+
+    function reset(){
+        console.log("hello")
+        showDeta(tempDeta)
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 function sortbyrating(){
     
     console.log("rating")
