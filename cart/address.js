@@ -92,7 +92,7 @@ address = JSON.parse(localStorage.getItem("formDataSub"))||[]
 
 document.querySelector("#sub").addEventListener("click", Submit)
 function Submit(){
-    if(address!=null){
+    if(address.length!=0){
         window.location.href = "./checkout.html"
     }
     else{
