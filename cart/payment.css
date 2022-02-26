@@ -111,3 +111,20 @@
     border-radius: 10px;
 }
 
+#newcard_detail {
+    background-color: white;
+    padding: 20px;
+}
+#form select {
+    margin-bottom: 10px;
+    
+}
+#form b {
+    margin-bottom: 10px;
+    
+}
+#form input {
+    border: none;
+    border-bottom: 1px solid black;
+    margin-bottom: 10px;
+}
