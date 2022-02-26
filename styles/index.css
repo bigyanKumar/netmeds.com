@@ -94,7 +94,7 @@ body{
  #box{
      width: 360px;
      height: 300px;
-     border: 1px solid red;
+     /* border: 1px solid red; */
      display: none;
      background-color: white;
      z-index: 1;
