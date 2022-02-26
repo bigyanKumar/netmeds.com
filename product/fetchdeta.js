@@ -21,6 +21,19 @@ localStorage.removeItem("TempProductItem")
 localStorage.setItem("TempProductItem",JSON.stringify(sortDeta))
 window.location.href = "./product/product.html"
 }
+function searchDeta(){
+    console.log()
+    localStorage.removeItem("TempProductItem")
+    text = document.getElementById("Searched").value
+    console.log(text)
+    searchText = ProductDetaBase.filter(function(ele){
+        return ele.name.includes(text)
+    })
+    localStorage.setItem("TempProductItem",JSON.stringify(searchText))
+    window.location.href = "./product/product.html"
+
+}
+
 // function diabetes(){
 //     localStorage.removeItem("TempProductItem")
 //     deta = "diabetes"
