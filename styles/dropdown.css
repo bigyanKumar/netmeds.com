@@ -1,0 +1,39 @@
+
+.pincode_content{
+    height: 313px;
+    position:absolute;
+    top:52px;
+    left:0;
+    width:360px;
+    /* border:1px solid red; */
+    font-family: latoSemiBold;
+    text-align: center;
+    
+}
+.pincode_content #saved_location{
+    padding: 16px 0;
+    margin:0 16px;
+    border-bottom: 1px solid rgb(0,0,0,.08);
+}
+.pincode_content #saved_loaction .signin_btn{
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 1px;
+    font-family: latoSemiBold;
+    background: #24aeb1;
+    color:#fff;
+    border-radius: 4px;
+    width:80%;
+    border:0px;
+    margin-top: 16px;
+    text-align: center;
+    padding: 12px 0;
+}
+.swiper-wrapper{
+    width: 100%;
+    display: flex;
+    box-sizing: content-box;
+}
+#input{
+    margin-top: 12px;
+}
