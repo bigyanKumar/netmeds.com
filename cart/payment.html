@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
-        <title>Netmeds.com: Indian Pharmcy</title>
+        <title>Netmeds.com: Payment</title>
         <link rel="stylesheet" href="../styles/index.css">
         <link rel="stylesheet" href="./payment.css">
         <script src="https://kit.fontawesome.com/0a03bfd4cc.js" crossorigin="anonymous"></script>
@@ -31,31 +31,40 @@
         
             <form ID="form">
         
-                    <select>
-                        <option>Debit card</option>
-                        <option>Credit card</option>
+                    <select id="card">
+                        <option value="">Card</option>
+                        <option value="debit_card">Debit card</option>
+                        <option value="credit_card">Credit card</option>
                     </select>
                 
                 
                     <div class="inner_detail">  
                             <b>CARD NUMBER</b> <BR>
-                        <input type="text" placeholder="">
+                        <input type="number" id="cardno" placeholder="CARD NUMBER">
                     </div>
                     <div class="inner_detail">  
                             <b>EXPIRY DATE</b> <BR>
-                        <input type="text" placeholder="">
+                        <input type="date" id="expirydate" placeholder="EXPIRY DATE">
                     </div>
                     <div class="inner_detail">  
                         <b>NAME ON CARD</b> <BR>
-                        <input type="text" placeholder="">
+                        <input type="text" id="cardholder" placeholder="CARD HOLDER NAME">
                     </div>
                     <div class="inner_detail">  
                         <b>CVV</b> <BR>
-                        <input type="text" placeholder="">
+                        <input type="text" id="cvv" type="number" placeholder="CVV">
                     </div>
-                
-                    <div class="inner_detail">  
-                    <button> Pay </button>
+                    <div id="Otp">  
+                        <!-- <b>Otp</b> <BR>
+                        <input type="text" id="cvv" type="number" placeholder="CVV"> -->
+                        <button id="PayNow">PayNow</button>
+                    </div>
+                    <div id="paypartner">
+                        <img src="https://live.staticflickr.com/5516/14656887193_e82a9a35d2_c.jpg" alt="Paytm Logo">
+                        <img src="https://w1.pngwing.com/pngs/138/644/png-transparent-paypal-logo-text-line-blue.png" alt="Paypal">
+                        <img src="https://www.voicendata.com/wp-content/uploads/2020/03/Phonepay-840x400.jpg" alt="Phonepay Logo">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Google_Pay_Logo_%282020%29.svg/2560px-Google_Pay_Logo_%282020%29.svg.png" alt="Google Pay">
+                        <img src="data:image/png;base64,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" alt="Bharat Pay">
                     </div>
         
             </form>
@@ -68,6 +77,8 @@
             <div>
                 <p>APPLY PROMOCODE / NMS SUPERCASH</p>
                 <P>Get flat discount! Vouchers applicable in payment options.</P>
+                <input type="text" id="promocode" placeholder="APPLY PROMOCODE">
+                <button id="apply">Apply</button>
             </div>
             <div>
                 Payment Details

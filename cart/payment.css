@@ -110,10 +110,14 @@
     height: 100%;
     border-radius: 10px;
 }
+#form{
+    width: 100%;
+}
 
 #newcard_detail {
     background-color: white;
     padding: 20px;
+    border-radius: 5px;
 }
 #form select {
     margin-bottom: 10px;
@@ -121,10 +125,55 @@
 }
 #form b {
     margin-bottom: 10px;
+    font-size: 15PX;
     
 }
 #form input {
     border: none;
-    border-bottom: 1px solid black;
+    border-bottom: 0.2px solid black;
     margin-bottom: 10px;
+}
+#form>div>input{
+    width: 98%;
+    height: 35px;
+}
+#form>select{
+    width: 100px;
+    height: 30px;
+}
+#submain>div:first-child>input{
+    width: 60%;
+    height: 35px;
+    margin-left: 8.3%;
+}
+#submain>div:first-child>button{
+    height: 40px;
+    width: 50px;
+}
+#submain>div:first-child>button:hover{
+    background-color: black;
+    color: white;
+}
+
+#paypartner{
+    display: flex;
+}
+#paypartner>img{
+    width: 90px;
+    height: 30px;
+    margin-left: 10px;
+}
+#Otp>button{
+    width: 130px;
+    height: 35px;
+    margin-bottom: 10px;
+}
+#Otp>button:hover{
+    background-color: black;
+    color: white;
+}
+#Otp>input{
+    width: 100px;
+    height: 35px;
+    border: 0.2px solid black;
 }

@@ -1,10 +1,7 @@
-// logInUserDetails = JSON.parse(localStorage.getItem("LoginUserDetails"))||[]
-// if(logInUserDetails!=0){
-// document.querySelector("#profile").innerText =""
-// Name = logInUserDetails[0].name
-// console.log(Name)
-// document.querySelector("#profile").innerText = Name
-// }
+logInUserDetails = JSON.parse(localStorage.getItem("LoginUserDetails"))||[]
+if(logInUserDetails.length==0){
+  window.location.href = "../login&signup/login&signup.html"
+}
 
 // logindetails = JSON.parse(localStorage.getItem("LoginUserDetails"))||[]
 // document.querySelector("#profile").addEventListener("click", logincheck)
