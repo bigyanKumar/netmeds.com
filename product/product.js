@@ -72,10 +72,16 @@ function sortbydis(){
     console.log(dis)
     showDeta(dis)
 }
+function Search(){
+    text = document.getElementById("search").value
+    searchText = tempDeta.filter(function(ele){
+        return ele.name.includes(text)
+    })
+    showDeta(searchText)
+}
 document.querySelector("#login").addEventListener("click",logincheck)
 logindetails = JSON.parse(localStorage.getItem("LoginUserDetails"))||[]
 function logincheck(){
-    console.log("1")
     if (logindetails.length!=null)
     {
         
