@@ -12,6 +12,7 @@ function showdata(address){
         deliveryadd.innerText= "DELIVERY ADDRESS"
 
         var change = document.createElement("p")
+        change.setAttribute("class","changea")
         change.innerText="CHANGE"
         topdiv.append(deliveryadd,change)
 

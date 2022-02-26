@@ -124,14 +124,35 @@
 .topdivaddress {
     display: flex;
     justify-content: space-between;
-    padding: 10px 10px;
+    padding: 5px 10px;
 } 
 
 .secdivaddress {
     font-family: Lato;
     font-size: 14px;
     color: #151b39;
-    line-height: 24px;
-    margin-top: 16px;
+    /* line-height: 24px; */
+    margin-top: -15px;
     word-break: break-word;
+    padding: 20px 10px;
+}
+.chnagea {
+    color: red;
+}
+
+#addressdrtails {
+    background-color: white;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+#addressdrtails topdivaddress {
+    padding: 5px 5px;
+}
+
+#addressdrtails secdivaddress {
+    padding: 5px 5px;
+}
+
+.topdivaddress > .changea {
+    color: red;
 }
