@@ -101,3 +101,13 @@ function checkSubs(ind){
 
 
 // after this
+
+document.querySelector("#proceed").addEventListener("click",next)
+function next(){
+    if(cartItem.length>0){
+        window.location.href = "./address.html"
+    }
+    else{
+        window.location.href = "../product/product.html"
+    }
+}
