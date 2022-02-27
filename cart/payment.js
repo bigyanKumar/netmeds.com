@@ -51,7 +51,7 @@ function sucess(){
     if(Otp=='123456'){
 
         localStorage.removeItem("cartDeta")
-        alert("Thank You for Shooping with Our Plateform! Your Order has Been Sucessfully Placed")
+        alert("Thank You! for Shooping with Our Plateform! Your Order has Been Sucessfully Placed")
 
         window.location.href ="../index.html"
     }
