@@ -1,4 +1,5 @@
-# netmeds.com
+[![Netlify Status](https://api.netlify.com/api/v1/badges/3dd45180-7ef9-4a81-9148-aa3c9fd43b40/deploy-status)](https://app.netlify.com/sites/nedmeds-93fcaf/deploys) 
+Netmeds.com
 netmeds Project
 In this blog, I will be telling about our experience of the project at Masai School during construct week. We were asked to clone the website of Netmeds an online health store. We were a team of 7 members Balu Saikumar, Shubham Ramesh Shewale, Mohd Haroon Qureshi, Bigyan Kumar Sandilya, Priyanshu Kumar, and Vaibhav Panchave.
 It was a very long week and we learn lots of new stuff, techniques during this period. And during testing before submission, it was really worth the efforts cloning the website.
